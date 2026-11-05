@@ -6,6 +6,18 @@ change in the live HTML/CSS. Build an alien arcade, a superhero pet rescue, or a
 taco truck on Mars. Choose an emoji mascot, a system font, and a background pattern.
 Take turns: one person chooses an edit, the other finds the code, then swap.
 
+## Cape Cod Tech theme
+
+The activity interface uses the palette from the school's
+[style guide](https://www.capetech.us/styleguide): maroon `#6A1817`, crimson
+`#941114`, platinum `#DFE1DF`, and charcoal `#1E1B1C`. Shared CSS variables
+also theme the progress indicator, code highlights, focus outlines, and confetti.
+The header's code shield is an original activity mark, not the official school logo.
+
+The interface uses Proxima Nova when locally available, with Arial/sans-serif
+fallbacks; no licensed font files are bundled or downloaded. The visitor's
+preview keeps its own editable colors and fonts, independent of the school theme.
+
 ## Run locally
 
 Open `index.html` in a modern browser. No installation, build, server, or internet
