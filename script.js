@@ -52,7 +52,7 @@ let celebrationTimer;
 
 function celebrate() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const colors = ["#791d3c", "#176aab", "#f0b429", "#2a8767"];
+  const colors = ["var(--maroon)", "var(--crimson)", "var(--platinum)", "var(--ink)"];
   for (let index = 0; index < 24; index += 1) {
     const piece = document.createElement("span");
     piece.className = "confetti-piece";
