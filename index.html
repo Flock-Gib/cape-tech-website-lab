@@ -25,6 +25,24 @@
         </div>
       </section>
 
+      <section class="mission panel" aria-labelledby="mission-title">
+        <p class="eyebrow">YOUR CREATIVE MISSION</p>
+        <h2 id="mission-title">Build an arcade for aliens</h2>
+        <p id="mission-description">Give space travelers a place to play. Invent a heading, change the background, and add your own style.</p>
+        <div class="mission-progress">
+          <label for="mission-progress">Mission progress</label>
+          <progress id="mission-progress" max="3" value="0">0 of 3</progress>
+          <span id="progress-count">0 / 3</span>
+        </div>
+        <ul class="challenge-list">
+          <li id="heading-task"><span class="task-marker" aria-hidden="true">○</span> <span>Invent a heading</span><span class="task-state">Not yet</span></li>
+          <li id="background-task"><span class="task-marker" aria-hidden="true">○</span> <span>Change the background color</span><span class="task-state">Not yet</span></li>
+          <li id="style-task"><span class="task-marker" aria-hidden="true">○</span> <span>Try an emoji, font, or pattern</span><span class="task-state">Not yet</span></li>
+        </ul>
+        <p id="challenge-status" role="status" aria-live="polite" aria-atomic="true">Three small edits. Ready for launch?</p>
+        <p id="creator-badge" class="creator-badge" hidden><span aria-hidden="true">🏅</span> Website Creator · Mission complete!</p>
+      </section>
+
       <div class="workspace">
         <section class="controls panel" aria-label="Make your website">
           <fieldset class="starter-picker">
@@ -72,14 +90,47 @@
               </div>
             </div>
             <p class="contrast-tip">Hard to read? Try a light text color on a dark background, or the reverse.</p>
+            <div class="style-controls">
+              <div>
+                <label for="mascot">Choose your mascot <span class="code-label">HTML</span></label>
+                <select id="mascot">
+                  <option value="">No mascot yet</option>
+                  <option value="👾">👾 Space invader</option>
+                  <option value="🚀">🚀 Rocket</option>
+                  <option value="🐾">🐾 Paw prints</option>
+                  <option value="🦸">🦸 Superhero</option>
+                  <option value="🌮">🌮 Taco</option>
+                  <option value="🪐">🪐 Planet</option>
+                </select>
+              </div>
+              <div>
+                <label for="font">Pick a font vibe <span class="code-label">CSS</span></label>
+                <select id="font">
+                  <option value="modern">Modern</option>
+                  <option value="retro">Retro code</option>
+                  <option value="storybook">Storybook</option>
+                </select>
+              </div>
+              <div>
+                <label for="pattern">Background pattern <span class="code-label">CSS</span></label>
+                <select id="pattern">
+                  <option value="none">Keep it simple</option>
+                  <option value="dots">Space dots</option>
+                  <option value="stripes">Diagonal stripes</option>
+                  <option value="grid">Pixel grid</option>
+                </select>
+              </div>
+            </div>
           </section>
         </section>
 
         <section class="result" aria-label="Your website and its code">
           <div class="section-heading"><h2>Your website, live</h2><span class="live-badge"><span aria-hidden="true">●</span> Updates as you type</span></div>
           <div class="preview-window">
+            <div id="confetti" class="confetti" aria-hidden="true"></div>
             <div class="browser-bar"><span class="browser-dots" aria-hidden="true">● ● ●</span><span>your-website / preview</span><span aria-hidden="true">↗</span></div>
             <div id="preview" aria-label="Live webpage preview">
+              <p id="preview-mascot" class="mascot" hidden></p>
               <h1 id="preview-heading"></h1>
               <p id="preview-paragraph"></p>
             </div>
@@ -98,14 +149,9 @@
 
       <section class="challenge panel" aria-labelledby="challenge-title">
         <div>
-          <p class="eyebrow">PUT IT TOGETHER</p>
-          <h2 id="challenge-title">Your 30-second challenge</h2>
-          <p>Change the heading and the background. Which one uses HTML? Which one uses CSS?</p>
-          <ul class="challenge-list">
-            <li id="heading-task"><span class="task-marker" aria-hidden="true">○</span> <span>Change the heading</span><span class="task-state">Not yet</span></li>
-            <li id="background-task"><span class="task-marker" aria-hidden="true">○</span> <span>Change the background</span><span class="task-state">Not yet</span></li>
-          </ul>
-          <p id="challenge-status" role="status" aria-live="polite" aria-atomic="true">Two small edits. You’ve got this!</p>
+          <p class="eyebrow">KEEP EXPLORING</p>
+          <h2 id="challenge-title">New world. New website.</h2>
+          <p>Pick another starter for a new mission. It replaces your current creation and resets your progress.</p>
           <p class="turn-tip"><strong>Team up:</strong> One person picks a change. The other finds it in the code. Then swap!</p>
         </div>
         <div class="reset-area">
